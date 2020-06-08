@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imatge trocejada</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        [class*="c-"]{
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .f-1, .f-2{
+            display: flex;
+        }
+        .c-1 img{
+            transform: translate(0,0px);
+            opacity: 1;
+            transition: 0.5s opacity;
+            
+        }
+        .c-1:hover img{
+            opacity: 0.4;
+        }
+        .c-1:hover{
+            background: yellow;
+        }
+        .c-2 img{
+            transform: translate(-300px,0);
+            opacity: 1;
+            transition: 0.5s opacity;
+        }
+        .c-2:hover img{
+            opacity: 0.4;
+            background: green;
+            transform: 4s transform;
+            transition: 1s;
+        }
+        .c-2:hover{
+            background: green;
+            transform:rotate(45deg);
+            transition: 2s background;
+          
+        }
+        .c-3 img{
+            transform: translate(-600px,0);
+            opacity: 1;
+            transition: 0.5s opacity;
+        }
+        .c-3:hover img{
+            opacity: 0.5;
+        }
+        .c-3:hover{
+            background: black;
+        }
+        .c-4 img{
+            transform: translate(0,-300px);
+            opacity: 1;
+            transition: 0.5s opacity;
+        }
+        .c-4:hover img{
+            opacity: 0.4;
+        }
+        .c-4:hover{
+            background: red;
+        }
+        .c-5 img{
+            transform: translate(-300px,-300px);
+            opacity: 1;
+            transition: 0.5s opacity;
+        }
+        .c-5:hover img{
+            opacity: 0.4;
+            
+        }
+        .c-5:hover{
+            background: pink;
+            transform: skew(12.5deg,12.5deg);
+        }
+        .c-6 img{
+            transform: translate(-600px,-300px);
+            opacity: 1;
+            transition: 0.5s opacity;
+        }
+        .c-6:hover img{
+            opacity: 0.4;
+        }
+        .c-6:hover{
+            background: blue;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="f-1">
+            <div class="c-1">
+                <img src="img/6f169441641467.57addbda0a7d5-1024x576.jpg">
+            </div>
+            <div class="c-2">
+                <img src="img/6f169441641467.57addbda0a7d5-1024x576.jpg">
+            </div>
+            <div class="c-3">
+                <img src="img/6f169441641467.57addbda0a7d5-1024x576.jpg">
+            </div>
+        </div>
+        <div class="f-2">
+            <div class="c-4">
+                <img src="img/6f169441641467.57addbda0a7d5-1024x576.jpg"> 
+            </div>
+            <div class="c-5">
+                <img src="img/6f169441641467.57addbda0a7d5-1024x576.jpg">
+            </div>
+            <div class="c-6">
+                <img src="img/6f169441641467.57addbda0a7d5-1024x576.jpg"> 
+            </div>
+        </div>
+    </div>
+</body></html>
